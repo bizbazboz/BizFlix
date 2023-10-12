@@ -1,0 +1,66 @@
+<!-- 
+This is the home page of the BizFlix website.
+The page includes a header with a logo, navigation bar, and search bar.
+It also includes a featured section with an image.
+The page imports Font Awesome and several CSS files for styling.
+Author: Bizo
+Date Created: 11-10-23 [DD-MM-YY]
+Copyright: Bizo 2023
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BizFlix</title> <!--Set's page Title-->
+    <link rel="stylesheet" href="/css/fontawesome/css/all.css"> <!-- Imports Font Awesome-->
+    <link rel="stylesheet" href="/css/home/moviepreviewpage.css"> <!-- Imports Home CSS-->
+    <link rel="stylesheet" href="/css/home/searchbar.css"> <!-- Imports searchbar CSS-->
+</head>
+
+<body>
+    <header> <!-- Configures Header -->
+        <div class="logo">
+            <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="Netflix Logo"> <!-- Adds Logo -->
+        </div>
+        <nav>
+            <ul> <!-- Adds Navigation Bar -->
+                <li><a href="/">Home</a></li> <!-- Adds Home Nav Button -->
+                <li><a href="#TV">TV Shows</a></li> <!-- Adds TV Shows Nav Button -->
+                <li><a href="#Movies">Movies</a></li><!-- Adds Movies Nav Button -->
+                <li><a href="#Picks">Netflix Picks</a></li><!-- Adds Picks Nav Button -->
+            </ul>
+        </nav>
+        <div class="search-box"> <!-- Adds Search Bar -->
+            <button class="btn-search"><i class="fas fa-search"></i></button>
+            <input type="text" class="input-search" placeholder="Type to Search...">
+          </div>
+    </header>
+
+    <style>
+        /* Set background image */
+        
+    </style>
+
+<body>
+<div style = "height: 1000px;" class = "image-section">
+    <h2>Lorem Ipsum</h2>
+    <p>aaaaaaaaaaaaah</p>
+
+</div>    
+<div class="footer" style="font-family: Arial, sans-serif;" >
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="footer-info">
+            <p>&copy; <span id="year"></span> BizFlix</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+</body>

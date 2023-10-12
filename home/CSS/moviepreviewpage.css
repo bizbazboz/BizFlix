@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-image: url("https://cdn.pixabay.com/photo/2018/04/04/13/38/nature-3289812_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+/* Blur background image */
+body::before {
+  content: "";
+  background: inherit;
+  position: fixed;
+  z-index: -1;
+  filter: blur(10px);
+  width: 100%;
+  height: 100%;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    margin-left: 0px;
+    background-color: #141414;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    opacity: 0.8;
+    margin-bottom: 0%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 10px;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: auto;
+    margin-left: 20px;
+}
+iframe {
+    z-index: 1;
+  }
+  
+  
+.iframe-container {
+margin-bottom: 50px;
+position: relative;
+}
+
+.footer {
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .footer-links a:hover {
+    color: #007bff;
+  }
+  
+  .footer-info {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    color: white;
+    margin-top: 0px;
+    position: relative;
+    padding-bottom: 200px;
+}
+.image-section img {
+    width: 100%;
+    height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+.image-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px;
+    position: absolute;
+    top: 20%;
+    right: 150px;
+    transform: translateY(-50%);
+    text-align: right;
+    width: 80%;
+    z-index: 2;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-right: 100px;
+}
+.image-section p {
+    margin-top: 30px;
+    position: absolute;
+    top: 50%;
+    right: 150px;
+    transform: translateY(-50%);
+    text-align: right;
+    width: 40%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-right: 100px;
+    z-index: 1;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}

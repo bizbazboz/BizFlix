@@ -1,0 +1,44 @@
+<!-- 
+This is the home page of the BizFlix website.
+The page includes a header with a logo, navigation bar, and search bar.
+It also includes a featured section with an image.
+The page imports Font Awesome and several CSS files for styling.
+Author: Bizo
+Date Created: 11-10-23 [DD-MM-YY]
+Copyright: Bizo 2023
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BizFlix</title> <!--Set's page Title-->
+    <link rel="stylesheet" href="/sharedcss/fontawesome/css/all.css"> <!-- Imports Font Awesome-->
+    <link rel="stylesheet" href="/home/CSS/homescreen.css"> <!-- Imports Home CSS-->
+    <link rel="stylesheet" href="/home/CSS/searchbar.css"> <!-- Imports searchbar CSS-->
+    <link rel="stylesheet" href="/home/CSS/featured.css"> <!-- Imports featured CSS-->
+    <script src="/headfoot.js"></script> <!-- Imports Header and Footer-->
+</head>
+
+<body>
+    <main-header></main-header> <!-- Adds Header -->
+    <div style="margin-top: 0px; width: 100%; height: calc(100vh - 300px);"> <!-- Adds Featured Section -->
+        <div class="image-section">
+            <img src="" alt="Show Image">
+            <h2>Lorem ipsum.</h2> <!-- Adds Featured Title -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor elit justo, venenatis laoreet sapien euismod nec. Integer interdum blandit nisl, non euismod tortor pellentesque id. Proin ac dictum arcu. Ut eget quam elementum, vestibulum risus ut, aliquam justo. Donec aliquam auctor erat. Integer non mi pharetra, lobortis massa ac, vestibulum turpis. Mauris tincidunt purus at ligula fermentum ornare. Quisque mi metus, porttitor ut semper sit amet, malesuada a mauris. Maecenas convallis felis ac sollicitudin scelerisque.</p>
+        </div>
+        <div style=" width: 98%; height:99.99%; -webkit-text-fill-color: aliceblue;">
+            <div class="iframe-container">
+                <iframe id ="TV" class = "content" width="100%" height="300px" scrolling="no" src="/carousel/html/carousel1.html" frameborder="0"></iframe>
+            </div>
+            <div class="iframe-container">
+                <iframe id ="Movies" class = "content" width="100%" height="300px" scrolling="no" src="/carousel/html/carousel2.html" frameborder="0"></iframe>
+            </div>
+            <div class="iframe-container">
+                <iframe id ="Picks" class = "content" width="100%" height="300px" scrolling="no" src="/carousel/html/carousel3.html" frameborder="0"></iframe>
+            </div>
+            <main-footer></main-footer>
+        </div>
+    </div>
+
+ </body>
+</html>

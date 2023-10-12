@@ -24,7 +24,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 3;
     opacity: 0.8;
     margin-bottom: 0%;
     top: 0;
@@ -57,4 +57,59 @@ nav li a {
     height: 50px;
     margin-right: auto;
     margin-left: 20px;
+}
+iframe {
+    z-index: 1;
+  }
+  
+  
+.iframe-container {
+margin-bottom: 50px;
+position: relative;
+}
+
+.footer {
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .footer-links a:hover {
+    color: #007bff;
+  }
+  
+  .footer-info {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  #hd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    margin-left: 0px;
+    background-color: #141414;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    opacity: 0.8;
+    margin-bottom: 0%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
 }
