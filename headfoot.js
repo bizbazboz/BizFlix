@@ -7,7 +7,7 @@ this.innerHTML = `
     <link rel="stylesheet" href="/home/CSS/searchbar.css"> <!-- Imports searchbar CSS-->
     <link rel="stylesheet" href="/home/CSS/featured.css"> <!-- Imports featured CSS-->
     <div class="logo">
-        <a href="/Home"><img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="Netflix Logo"> </a><!-- Adds Logo -->
+        <a href="/Home"><img src="/Logo.png" alt="Netflix Logo"> </a><!-- Adds Logo -->
     </div>
     <nav>
         <ul> <!-- Adds Navigation Bar -->
@@ -48,5 +48,16 @@ this.innerHTML = `
 `;
 }
 }
+class CSS extends HTMLElement {
+    connectedCallback() {
+    this.innerHTML = `  
+    <link rel="stylesheet" href="/sharedcss/fontawesome/css/all.css"> <!-- Imports Font Awesome-->
+    <link rel="stylesheet" href="/home/CSS/homescreen.css"> <!-- Imports Home CSS-->
+    <link rel="stylesheet" href="/home/CSS/searchbar.css"> <!-- Imports searchbar CSS-->
+    <link rel="stylesheet" href="/home/CSS/featured.css"> <!-- Imports featured CSS-->  
+    `;
+    }
+}
 customElements.define('main-header', Header);
 customElements.define('main-footer', Footer);
+customElements.define('CSSImport', CSS);

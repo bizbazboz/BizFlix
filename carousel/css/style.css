@@ -1,5 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
-
+@font-face { font-family: NetFont; src: url('/BebasNeue-Regular.ttf'); }
 
 body,
 html {
@@ -7,7 +7,7 @@ html {
   margin: 0;
   background: #000000;
   color: #ecf0f1;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'NetFont';
   min-height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;

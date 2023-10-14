@@ -11,29 +11,13 @@ Copyright: Bizo 2023
 <html>
 <head>
     <title>BizFlix</title> <!--Set's page Title-->
-    <link rel="stylesheet" href="/css/fontawesome/css/all.css"> <!-- Imports Font Awesome-->
+    <CSSImport></CSSImport> <!-- Imports CSS -->
     <link rel="stylesheet" href="/css/home/moviepreviewpage.css"> <!-- Imports Home CSS-->
-    <link rel="stylesheet" href="/css/home/searchbar.css"> <!-- Imports searchbar CSS-->
+    <script src="/headfoot.js"></script> <!-- Imports Header and Footer-->
 </head>
 
 <body>
-    <header> <!-- Configures Header -->
-        <div class="logo">
-            <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="Netflix Logo"> <!-- Adds Logo -->
-        </div>
-        <nav>
-            <ul> <!-- Adds Navigation Bar -->
-                <li><a href="/">Home</a></li> <!-- Adds Home Nav Button -->
-                <li><a href="#TV">TV Shows</a></li> <!-- Adds TV Shows Nav Button -->
-                <li><a href="#Movies">Movies</a></li><!-- Adds Movies Nav Button -->
-                <li><a href="#Picks">Netflix Picks</a></li><!-- Adds Picks Nav Button -->
-            </ul>
-        </nav>
-        <div class="search-box"> <!-- Adds Search Bar -->
-            <button class="btn-search"><i class="fas fa-search"></i></button>
-            <input type="text" class="input-search" placeholder="Type to Search...">
-          </div>
-    </header>
+    <main-header></main-header> <!-- Adds Header -->
 
     <style>
         /* Set background image */
@@ -46,21 +30,5 @@ Copyright: Bizo 2023
     <p>aaaaaaaaaaaaah</p>
 
 </div>    
-<div class="footer" style="font-family: Arial, sans-serif;" >
-    <div class="footer-content">
-        <div class="footer-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-        </div>
-        <div class="footer-info">
-            <p>&copy; <span id="year"></span> BizFlix</p>
-        </div>
-    </div>
-</div>
-
-<script>
-    document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>
+<main-footer></main-footer>
 </body>
